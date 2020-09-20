@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./css/stylesheet.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculator JS</title>
+    </head>
+    <body>
+        
+        <table class="calculator">
+            <!-- this is the input,answer and eraser of the calculator -->
+            <tr>
+                <td>
+                    <input type="text" id="input" readonly="readonly">
+                    <input type="text" id="answer" readonly="readonly">
+                    <br>
+
+                </td>
+            </tr>
+            <!-- buttons of the calculator-->
+            <td>
+                <input type="button" value=" C " class="btn-operator" onclick="clearScreen()">
+                <input type="button" value=" ( ) " class="btn-operator" onclick="brackets()">
+                <input type="button" value=" % " class="btn-operator" onclick="getOperant('%')">
+                <input type="button" value=" &#247; " class="btn-operator" onclick="getOperant('/')">
+                <br>
+                <input type="button" value=" 7 " class="btn-number" onclick="getNumber(7)">
+                <input type="button" value=" 8 " class="btn-number" onclick="getNumber(8)">
+                <input type="button" value=" 9 " class="btn-number" onclick="getNumber(9)">
+                <input type="button" value=" x " class="btn-operator" onclick="getOperant('x')">
+                <br>
+                <input type="button" value=" 4 " class="btn-number" onclick="getNumber(4)">
+                <input type="button" value=" 5 " class="btn-number" onclick="getNumber(5)">
+                <input type="button" value=" 6 " class="btn-number" onclick="getNumber(6)">
+                <input type="button" value=" - " class="btn-operator" onclick="getOperant('-')">
+                <br>
+                <input type="button" value=" 1 " class="btn-number" onclick="getNumber(1)">
+                <input type="button" value=" 2 " class="btn-number" onclick="getNumber(2)">
+                <input type="button" value=" 3 " class="btn-number" onclick="getNumber(3)">
+                <input type="button" value=" + " class="btn-operator" onclick="getOperant('+')">
+                <br>
+                <input type="button" value=" +/- " class="btn-operator" onclick="getOperant('+/-')">
+                <input type="button" value=" 0 " class="btn-number" onclick="getNumber(0)">
+                <input type="button" value=" . " class="btn-operator" onclick="dot('.')">
+                <input type="button" value=" = " class="btn-operator" onclick="equals()">
+
+                <button class="btn-eraser" onclick="eraser()"><ion-icon name="close-circle-outline"></ion-icon></button>
+                
+            </td>
+        </table>
+        <script type="text/javascript" src="./js/script.js"></script>
+        <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    </body>
+</html>
