@@ -38,7 +38,7 @@ body{
     text-align: right;
     background-color: rgb(33, 43, 65);
     border: none;
-    
+    outline: 0;
 }
 
 /*------- BUTTON OPERATOR AND NUMBER --------*/
@@ -89,7 +89,10 @@ ion-icon{
     z-index: 1;
     background-color: rgb(33, 43, 65);
     border: none;
+    outline: 0;
 }
+
+
 
 
 
