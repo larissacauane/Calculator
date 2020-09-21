@@ -14,8 +14,8 @@ body{
     height: 530px;
     background-color: rgb(46, 57, 81);
     margin: 0 auto;
-    top: 50px;
     position: relative;
+    top: 50px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
@@ -47,6 +47,7 @@ body{
     height: 50px;
     position: relative;
     margin: 2px;
+    
     top: 40px;
     left: 4px;
     font-family: 'Montserrat', sans-serif;
@@ -92,6 +93,9 @@ ion-icon{
     outline: 0;
 }
 
+.btn-eraser:hover{
+    background-color: rgb(46, 57, 81);
+}
 
 
 

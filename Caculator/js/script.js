@@ -77,27 +77,26 @@ function eraser(){
 
 function equals(){
     var input_num = document.getElementById('input')
-    var output_answer = Math.abs(+eval(input_num.value))
+    var output_answer = Math.abs(eval(input_num.value))
     document.getElementById('answer').value = output_answer
 }
 
-var b = 0;
+//put brackets
 function brackets(){
     var input_num = document.getElementById('input')
-    if(b == 0){
+    if(input_num.value == ""){
         input_num.value += '('
-        b = 1
     }else{
         input_num.value += ')'
-        b = 0
     }
 }
 
-var d = 0
+//put dot
 function dot(){
     var input_num = document.getElementById('input')
-    if(b == 0){
+    if(input_num.value >= 0){
         input_num.value += '.'
-        d = 1
+    }else{
+        input_num.value += '.'
     }
 }
