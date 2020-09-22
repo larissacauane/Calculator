@@ -1,7 +1,16 @@
+/*------- VARIABLE --------*/
+html{
+    --color-light-gray: rgb(46, 57, 81);
+    --color-dark-gray: rgb(33, 43, 65);
+    --color-green: rgb(26, 175, 142);
+
+}
+
 /*------- BASIC SETUP --------*/
 *{
     margin: 0;
     padding: 0;
+    border: 0;
 }
 
 body{
@@ -12,72 +21,71 @@ body{
 .calculator{
     width: 320px;
     height: 530px;
-    background-color: rgb(46, 57, 81);
-    margin: 0 auto;
-    position: relative;
-    top: 50px;
+    background-color: var(--color-light-gray);
+    margin: 40px auto;
     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
 
 /*-------- INPUT AND ANSWER --------*/
+
 #input{
     position: absolute;
-    top: 1px;
+    top: 40px;
 }
 
 #answer{
     position: absolute;
-    top: 111px;
+    top: 150px;
 }
 
 #input, #answer{
     width: 317px;
     height: 110px;
     font-size: 40px;
-    color: rgb(26, 175, 142);
+    color: var(--color-green);
     text-align: right;
-    background-color: rgb(33, 43, 65);
+    background-color: var(--color-dark-gray);
     border: none;
     outline: 0;
 }
 
-/*------- BUTTON OPERATOR AND NUMBER --------*/
+/*------- BUTTON OPERATOR AND BUTTON NUMBER --------*/
 .btn-operator, .btn-number{
     width: 70px;
     height: 50px;
     position: relative;
     margin: 2px;
-    
     top: 40px;
     left: 4px;
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     border: none;
     outline: 0;
+    
 }
 
 .btn-number{
     color: rgb(129, 146, 144);
-    background-color: rgb(46, 57, 81);
+    background-color: var(--color-light-gray);
 }
 
 .btn-operator{
-    color: rgb(26, 175, 142);
-    background-color: rgb(33, 43, 65);
+    color: var(--color-green);
+    background-color: var(--color-dark-gray);
 }
 
 .btn-number:hover, 
 .btn-operator:hover{
-    color: rgb(33, 43, 65);
-    background-color: rgb(26, 175, 142);
+    color: var(--color-dark-gray);
+    background-color: var(--color-green);
     cursor: pointer;
     border: none;
     outline: 0;
 }
 
-/*-------- BUTTON ERASER*/
+/*-------- BUTTON ERASER -------*/
 ion-icon{
-    color: rgb(26, 175, 142);
+    color: var(--color-green);
     font-size: 20px;
 }
 
@@ -85,18 +93,14 @@ ion-icon{
     width: 40px;
     height: 30px;
     position: absolute;
-    left: 10px;
-    top: 180px;
+    left: 530px;
+    top: 225px;
     z-index: 1;
-    background-color: rgb(33, 43, 65);
+    background-color: var(--color-dark-gray);
     border: none;
     outline: 0;
 }
 
 .btn-eraser:hover{
-    background-color: rgb(46, 57, 81);
+    background-color: var(--color-light-gray);
 }
-
-
-
-
