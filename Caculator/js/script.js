@@ -4,31 +4,31 @@ function getNumber(num){
     switch(num){
         case 1:
             input_num.value += 1
-            break;
+            break
         case 2:
             input_num.value += 2
-            break;
+            break
         case 3:
             input_num.value += 3
-            break;
+            break
         case 4:
             input_num.value += 4
-            break;
+            break
         case 5:
             input_num.value += 5
-            break;
+            break
         case 6:
             input_num.value += 6
-            break;
+            break
         case 7:
             input_num.value += 7
-            break;
+            break
         case 8:
             input_num.value += 8
-            break;
+            break
         case 9:
             input_num.value += 9
-            break;
+            break
         default:
             input_num.value += 0    
     }
