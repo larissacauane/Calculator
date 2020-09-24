@@ -50,12 +50,8 @@ function getOperant(operand){
         case '/':
             input_operand.value += '/'
             break;
-        case '%':
-            input_operand.value += '%'
-            break;
         default:
-            input_operand.value += '(-'
-            break;
+            input_operand.value += '%'
     }
 }
 
