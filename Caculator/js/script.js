@@ -36,25 +36,25 @@ function getNumber(num){
 
 //takes mathematical operators
 function getOperant(operand){
-    var input_num = document.getElementById('input')
+    var input_operand = document.getElementById('input')
     switch(operand){
         case '+':
-            input_num.value += '+'
+            input_operand.value += '+'
             break;
         case '-':
-            input_num.value += '-'
+            input_operand.value += '-'
             break;
         case 'x':
-            input_num.value += '*'
+            input_operand.value += '*'
             break;
         case '/':
-            input_num.value += '/'
+            input_operand.value += '/'
             break;
         case '%':
-            input_num.value += '%'
+            input_operand.value += '%'
             break;
         default:
-            input_num.value += '(-'
+            input_operand.value += '(-'
             break;
     }
 }
@@ -67,36 +67,36 @@ function clearScreen(){
 
 // eraser a number
 function eraser(){
-    var input_num = document.getElementById('input')
-    var input_value = input_num.value
-    if(input_value.length > 0){
-        input_value = input_value.substring(0, input_value.length-1) // remove the last number
-        input_num.value = input_value
+    var btn_eraser = document.getElementById('input')
+    var btn_eraserNumber = btn_eraser.value
+    if(btn_eraserNumber.length > 0){
+        btn_eraserNumber = btn_eraserNumber.substring(0, btn_eraserNumber.length-1) // remove the last number
+        btn_eraser.value = btn_eraserNumber
     }
 }
 
 function equals(){
-    var input_num = document.getElementById('input')
-    var output_answer = Math.abs(eval(input_num.value))
+    var btn_equals = document.getElementById('input')
+    var output_answer = Math.abs(eval(btn_equals.value))
     document.getElementById('answer').value = output_answer
 }
 
 //put brackets
 function brackets(){
-    var input_num = document.getElementById('input')
-    if(input_num.value == ""){
-        input_num.value += '('
+    var input_brackets = document.getElementById('input')
+    if(input_brackets.value == ""){
+        input_brackets.value += '('
     }else{
-        input_num.value += ')'
+        input_brackets.value += ')'
     }
 }
 
 //put dot
 function dot(){
-    var input_num = document.getElementById('input')
-    if(input_num.value >= 0){
-        input_num.value += '.'
+    var input_dot = document.getElementById('input')
+    if(input_dot.value <= 0){
+        input_dot.value += '0.'
     }else{
-        input_num.value += '.'
+        input_dot.value += '.'
     }
 }
