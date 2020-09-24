@@ -75,20 +75,11 @@ function eraser(){
     }
 }
 
+// returns the result
 function equals(){
     var btn_equals = document.getElementById('input')
     var output_answer = Math.abs(eval(btn_equals.value))
     document.getElementById('answer').value = output_answer
-}
-
-//put brackets
-function brackets(){
-    var input_brackets = document.getElementById('input')
-    if(input_brackets.value == ""){
-        input_brackets.value += '('
-    }else{
-        input_brackets.value += ')'
-    }
 }
 
 //put dot

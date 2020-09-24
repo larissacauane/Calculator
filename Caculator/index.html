@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="./css/stylesheet.css">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Calculator JS</title>
     </head>
@@ -22,7 +22,7 @@
             <!-- buttons of the calculator-->
             <td>
                 <input type="button" value=" C " class="btn-operator" onclick="clearScreen()">
-                <input type="button" value=" ( ) " class="btn-operator" onclick="brackets()">
+                <input type="button" value=" CE " class="btn-operator" onclick="eraser()">
                 <input type="button" value=" % " class="btn-operator" onclick="getOperant('%')">
                 <input type="button" value=" &#247; " class="btn-operator" onclick="getOperant('/')">
                 
@@ -41,12 +41,12 @@
                 <input type="button" value=" 3 " class="btn-number" onclick="getNumber(3)">
                 <input type="button" value=" + " class="btn-operator" onclick="getOperant('+')">
                 
-                <input type="button" value=" +/- " class="btn-operator" onclick="getOperant('+/-')">
+                
                 <input type="button" value=" 0 " class="btn-number" onclick="getNumber(0)">
                 <input type="button" value=" . " class="btn-operator" onclick="dot('.')">
-                <input type="button" value=" = " class="btn-operator" onclick="equals()">
+                <input type="button" value=" = " class="btn-operator btn-equals" onclick="equals()">
 
-                <button class="btn-eraser" onclick="eraser()"><ion-icon name="close-circle-outline"></ion-icon></button>
+                
                 
             </td>
         </table>
